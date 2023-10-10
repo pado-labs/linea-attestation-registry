@@ -24,10 +24,13 @@
     "deploy": "source .env && cp subgraph.mainnet.yaml subgraph.yaml && pnpm run build && graph deploy --network linea-mainnet --node $DEPLOY_ENDPOINT_MAINNET --headers \"{\\\"Authorization\\\": \\\"Basic $IPFS_IDENTIFIERS\\\"}\" --ipfs $IPFS_ENDPOINT --version-label v0.0.1 Consensys/linea-attestation-registry",
     "deploy:goerli": "source .env && cp subgraph.goerli.yaml subgraph.yaml && pnpm run build:goerli && graph deploy --network linea-goerli --node $DEPLOY_ENDPOINT_GOERLI --headers \"{\\\"Authorization\\\": \\\"Basic $IPFS_IDENTIFIERS\\\"}\" --ipfs $IPFS_ENDPOINT --version-label v0.0.5 Consensys/linea-attestation-registry",
     "remove": "source .env && graph remove --node $DEPLOY_ENDPOINT_MAINNET Consensys/linea-attestation-registry",
-    "remove:goerli": "source .env && graph remove --node $DEPLOY_ENDPOINT_GOERLI Consensys/linea-attestation-registry"
+    "remove:goerli": "source .env && graph remove --node $DEPLOY_ENDPOINT_GOERLI Consensys/linea-attestation-registry",
+    "test": "graph test -v 0.5.2"
   },
   "devDependencies": {
-    "@graphprotocol/graph-cli": "0.58.0",
-    "@graphprotocol/graph-ts": "0.31.0"
+    "@graphprotocol/graph-cli": "0.59.0",
+    "@graphprotocol/graph-ts": "0.30.0",
+    "matchstick-as": "0.5.2",
+    "assemblyscript": "0.19.10"
   }
 }
