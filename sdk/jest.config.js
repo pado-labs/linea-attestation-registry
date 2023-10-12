@@ -1,5 +1,4 @@
 export default {
-  preset: 'ts-jest',
-  testEnvironment: 'node',
-  // ... other Jest configuration options
+  preset: "ts-jest",
+  testEnvironment: "node",
 };

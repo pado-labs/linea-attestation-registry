@@ -31,5 +31,17 @@ export default class AttestationExamples {
         ),
       );
     }
+
+    if (methodName.toLowerCase() == "getAttestations".toLowerCase() || methodName == "") {
+      console.log(
+        await this.veraxSdk.attestation.getAttestations(
+          2,
+          0,
+          { attester_not: "0x809e815596AbEB3764aBf81BE2DC39fBBAcc9949" },
+          "attestedDate",
+          "desc",
+        ),
+      );
+    }
   }
 }
