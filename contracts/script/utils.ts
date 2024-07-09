@@ -22,6 +22,8 @@ export const getChainPrefix = (chainId: bigint): `0x${string}` => {
       return "0x0006000000000000000000000000000000000000000000000000000000000000";
     case 56n: // BSC mainnet
       return "0x0006000000000000000000000000000000000000000000000000000000000000";
+    case 167009n: // Taiko tesnet (Hekla)
+      return "0x0008000000000000000000000000000000000000000000000000000000000000";
     default:
       throw new Error("Unknown network");
   }

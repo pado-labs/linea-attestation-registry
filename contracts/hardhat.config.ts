@@ -66,6 +66,10 @@ const config: HardhatUserConfig = {
       url: "https://sepolia-rpc.scroll.io/",
       accounts: process.env.PRIVATE_KEY_SCROLL_TESTNET !== undefined ? [process.env.PRIVATE_KEY_SCROLL_TESTNET] : [],
     },
+    "taiko-hekla": {
+      url: `https://rpc.hekla.taiko.xyz`,
+      accounts: process.env.PRIVATE_KEY_TAIKO_HEKLA !== undefined ? [process.env.PRIVATE_KEY_TAIKO_HEKLA] : [],
+    },
   },
   paths: {
     sources: "./src",
@@ -84,6 +88,7 @@ const config: HardhatUserConfig = {
       "linea-sepolia": process.env.LINEASCAN_API_KEY ?? "",
       linea: process.env.LINEASCAN_API_KEY ?? "",
       "scroll-sepolia": process.env.SCROLL_API_KEY ?? "",
+      "taiko-hekla": process.env.TAIKOSCAN_API_KEY ?? "",
     },
     customChains: [
       {
@@ -181,6 +186,14 @@ const config: HardhatUserConfig = {
           apiURL: "https://sepolia-blockscout.scroll.io/api",
           browserURL: "https://sepolia-blockscout.scroll.io/",
         },
+      },
+      {
+        network: "taiko-hekla",
+        chainId: 167009,
+        urls: {
+          apiURL: "https://api.routescan.io/v2/network/testnet/evm/167009/etherscan",
+          browserURL: "https://hekla.taikoscan.network"
+        }
       },
     ],
   },

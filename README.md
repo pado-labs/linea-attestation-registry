@@ -77,6 +77,7 @@ The main contracts (i.e. the "registries") and the helpers contracts are deploye
 - Base Mainnet
 - BSC Testnet
 - BSC Mainnet
+- Taiko Testnet (Hekla)
 
 Here are the addresses on those networks:
 
@@ -216,6 +217,40 @@ Here are the addresses on those networks:
 - SchemaRegistry =
   [0x8081dCd745f160c148Eb5be510F78628A0951c31](https://basescan.org/address/0x8081dCd745f160c148Eb5be510F78628A0951c31)
 
+</details>
+
+<details>
+  <summary>BSC Testnet</summary>
+
+- Router =
+  [0x90b8542d7288a83EC887229A7C727989C3b56209](https://testnet.bscscan.com/address/0x90b8542d7288a83EC887229A7C727989C3b56209)
+- AttestationRegistry =
+  [0x5Cc4029f0dDae1FFE527385459D06d81DFD50EEe](https://testnet.bscscan.com/address/0x5Cc4029f0dDae1FFE527385459D06d81DFD50EEe)
+- ModuleRegistry =
+  [0x6c46c245918d4fcfC13F0a9e2e49d4E2739A353a](https://testnet.bscscan.com/address/0x6c46c245918d4fcfC13F0a9e2e49d4E2739A353a)
+- PortalRegistry =
+  [0xA4a7517F62216BD42e42a67dF09C25adc72A5897](https://testnet.bscscan.com/address/0xA4a7517F62216BD42e42a67dF09C25adc72A5897)
+- SchemaRegistry =
+  [0x51929da151eC2C5a5881C750E5b9941eACC46c1d](https://testnet.bscscan.com/address/0x51929da151eC2C5a5881C750E5b9941eACC46c1d)
+
+</details>
+
+<details>
+  <summary>BSC</summary>
+
+- Router =
+  [0x7a5C1fAC7fF9908a8b2ED479e060619213116A47](https://bscscan.com/address/0x7a5C1fAC7fF9908a8b2ED479e060619213116A47)
+- AttestationRegistry =
+  [0x3D8A3a8FF21bD295dbBD5319C399e2C4FD27F261](https://bscscan.com/address/0x3D8A3a8FF21bD295dbBD5319C399e2C4FD27F261)
+- ModuleRegistry =
+  [0xD70a06f7A0f197D55Fa841fcF668782b2B8266eB](https://bscscan.com/address/0xD70a06f7A0f197D55Fa841fcF668782b2B8266eB)
+- PortalRegistry =
+  [0xb2553A7E443DFA7C9dEc01D327FdDff1A5eF59b0](https://bscscan.com/address/0xb2553A7E443DFA7C9dEc01D327FdDff1A5eF59b0)
+- SchemaRegistry =
+  [0x29205492435E1b06B20CeAeEC4AC41bcF595DFFd](https://bscscan.com/address/0x29205492435E1b06B20CeAeEC4AC41bcF595DFFd)
+
+</details>
+
 <details>
   <summary>BSC Testnet</summary>
 
@@ -249,34 +284,20 @@ Here are the addresses on those networks:
 </details>
 
 <details>
-  <summary>BSC Testnet</summary>
+  <summary>Taiko Testnet (Hekla)</summary>
 
 - Router =
-  [0x90b8542d7288a83EC887229A7C727989C3b56209](https://testnet.bscscan.com/address/0x90b8542d7288a83EC887229A7C727989C3b56209)
+  [0x772F5b156EDaa4874F3f4F81c5e4479EE7E1669B](https://hekla.taikoscan.network/address/0x772F5b156EDaa4874F3f4F81c5e4479EE7E1669B)
 - AttestationRegistry =
-  [0x5Cc4029f0dDae1FFE527385459D06d81DFD50EEe](https://testnet.bscscan.com/address/0x5Cc4029f0dDae1FFE527385459D06d81DFD50EEe)
+  [0xAd282534895FcC7CCCD64590AEEC7b6023B4b154](https://hekla.taikoscan.network/address/0xAd282534895FcC7CCCD64590AEEC7b6023B4b154)
 - ModuleRegistry =
-  [0x6c46c245918d4fcfC13F0a9e2e49d4E2739A353a](https://testnet.bscscan.com/address/0x6c46c245918d4fcfC13F0a9e2e49d4E2739A353a)
+  [0xAA71295581A3A8f734953624B91A05A77c5904b2](https://hekla.taikoscan.network/address/0xAA71295581A3A8f734953624B91A05A77c5904b2)
 - PortalRegistry =
-  [0xA4a7517F62216BD42e42a67dF09C25adc72A5897](https://testnet.bscscan.com/address/0xA4a7517F62216BD42e42a67dF09C25adc72A5897)
+  [0x0fa524b2b74EC8d59Ca4515263AA9E145d2CC3eC](https://hekla.taikoscan.network/address/0x0fa524b2b74EC8d59Ca4515263AA9E145d2CC3eC)
 - SchemaRegistry =
-  [0x51929da151eC2C5a5881C750E5b9941eACC46c1d](https://testnet.bscscan.com/address/0x51929da151eC2C5a5881C750E5b9941eACC46c1d)
-
-</details>
-
-<details>
-  <summary>BSC</summary>
-
-- Router =
-  [0x7a5C1fAC7fF9908a8b2ED479e060619213116A47](https://bscscan.com/address/0x7a5C1fAC7fF9908a8b2ED479e060619213116A47)
-- AttestationRegistry =
-  [0x3D8A3a8FF21bD295dbBD5319C399e2C4FD27F261](https://bscscan.com/address/0x3D8A3a8FF21bD295dbBD5319C399e2C4FD27F261)
-- ModuleRegistry =
-  [0xD70a06f7A0f197D55Fa841fcF668782b2B8266eB](https://bscscan.com/address/0xD70a06f7A0f197D55Fa841fcF668782b2B8266eB)
-- PortalRegistry =
-  [0xb2553A7E443DFA7C9dEc01D327FdDff1A5eF59b0](https://bscscan.com/address/0xb2553A7E443DFA7C9dEc01D327FdDff1A5eF59b0)
-- SchemaRegistry =
-  [0x29205492435E1b06B20CeAeEC4AC41bcF595DFFd](https://bscscan.com/address/0x29205492435E1b06B20CeAeEC4AC41bcF595DFFd)
+  [0x67298a8Cf24E062bc018e50c2a64760cfB0Eb184](https://hekla.taikoscan.network/address/0x67298a8Cf24E062bc018e50c2a64760cfB0Eb184)
+- AttestationReader =
+  [0x09F0191C98205FDaeA75A52acABca64989Ec002A](https://hekla.taikoscan.network/address/0x09F0191C98205FDaeA75A52acABca64989Ec002A)
 
 </details>
 
@@ -293,6 +314,8 @@ Here are the addresses on those networks:
 - [Base Mainnet](https://api.studio.thegraph.com/query/67521/verax-v1-base/v0.0.2)
 - [BSC Testnet](https://api.studio.thegraph.com/query/67521/verax-v1-bsc-testnet/v0.0.1)
 - [BSC Mainnet](https://api.studio.thegraph.com/query/67521/verax-v1-bsc/v0.0.1)
+- Taiko Testnet (Hekla)
+
 
 ## Network Prefixes
 
@@ -309,6 +332,7 @@ ID. This prefix is defined in the `contracts/script/utils.ts` file.
 - Base Mainnet - `0x0005`
 - BSC Testnet - `0x0006`
 - BSC Mainnet - `0x0006`
+- Taiko Testnet (Hekla) - `0x0008`
 
 ## License
 

@@ -1,0 +1,96 @@
+specVersion: 0.0.5
+schema:
+  file: ./schema-v1.graphql
+dataSources:
+  - kind: ethereum
+    name: AttestationRegistry
+    network: taiko-hekla
+    source:
+      abi: AttestationRegistry
+      address: "0xAd282534895FcC7CCCD64590AEEC7b6023B4b154"
+      startBlock: 426205
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Attestation
+      abis:
+        - name: AttestationRegistry
+          file: ./abis/AttestationRegistry.json
+      eventHandlers:
+        - event: AttestationRegistered(indexed bytes32)
+          handler: handleAttestationRegistered
+        - event: AttestationRevoked(bytes32)
+          handler: handleAttestationRevoked
+        - event: AttestationReplaced(bytes32,bytes32)
+          handler: handleAttestationReplaced
+        - event: VersionUpdated(uint16)
+          handler: handleVersionUpdated
+      file: ./src/attestation-registry-v1.ts
+  - kind: ethereum
+    name: ModuleRegistry
+    network: taiko-hekla
+    source:
+      abi: ModuleRegistry
+      address: "0xAA71295581A3A8f734953624B91A05A77c5904b2"
+      startBlock: 426205
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Module
+      abis:
+        - name: ModuleRegistry
+          file: ./abis/ModuleRegistry.json
+      eventHandlers:
+        - event: ModuleRegistered(string,string,address)
+          handler: handleModuleRegistered
+      file: ./src/module-registry-v1.ts
+  - kind: ethereum
+    name: PortalRegistry
+    network: taiko-hekla
+    source:
+      abi: PortalRegistry
+      address: "0x0fa524b2b74EC8d59Ca4515263AA9E145d2CC3eC"
+      startBlock: 426205
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Portal
+      abis:
+        - name: PortalRegistry
+          file: ./abis/PortalRegistry.json
+      eventHandlers:
+        - event: PortalRegistered(string,string,address)
+          handler: handlePortalRegistered
+        - event: IssuerAdded(address)
+          handler: handleIssuerAdded
+        - event: IssuerRemoved(address)
+          handler: handleIssuerRemoved
+      file: ./src/portal-registry-v1.ts
+  - kind: ethereum
+    name: SchemaRegistry
+    network: taiko-hekla
+    source:
+      abi: SchemaRegistry
+      address: "0x67298a8Cf24E062bc018e50c2a64760cfB0Eb184"
+      startBlock: 426205
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Schema
+      abis:
+        - name: SchemaRegistry
+          file: ./abis/SchemaRegistry.json
+      eventHandlers:
+        - event: SchemaCreated(indexed bytes32,string,string,string,string)
+          handler: handleSchemaCreated
+        - event: SchemaContextUpdated(indexed bytes32)
+          handler: handleSchemaContextUpdated
+      file: ./src/schema-registry-v1.ts
