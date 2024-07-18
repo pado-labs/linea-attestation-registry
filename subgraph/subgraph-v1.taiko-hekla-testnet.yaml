@@ -4,7 +4,7 @@ schema:
 dataSources:
   - kind: ethereum
     name: AttestationRegistry
-    network: taiko-hekla
+    network: taiko-hekla-testnet
     source:
       abi: AttestationRegistry
       address: "0xAd282534895FcC7CCCD64590AEEC7b6023B4b154"
@@ -30,7 +30,7 @@ dataSources:
       file: ./src/attestation-registry-v1.ts
   - kind: ethereum
     name: ModuleRegistry
-    network: taiko-hekla
+    network: taiko-hekla-testnet
     source:
       abi: ModuleRegistry
       address: "0xAA71295581A3A8f734953624B91A05A77c5904b2"
@@ -50,7 +50,7 @@ dataSources:
       file: ./src/module-registry-v1.ts
   - kind: ethereum
     name: PortalRegistry
-    network: taiko-hekla
+    network: taiko-hekla-testnet
     source:
       abi: PortalRegistry
       address: "0x0fa524b2b74EC8d59Ca4515263AA9E145d2CC3eC"
@@ -74,7 +74,7 @@ dataSources:
       file: ./src/portal-registry-v1.ts
   - kind: ethereum
     name: SchemaRegistry
-    network: taiko-hekla
+    network: taiko-hekla-testnet
     source:
       abi: SchemaRegistry
       address: "0x67298a8Cf24E062bc018e50c2a64760cfB0Eb184"

@@ -314,7 +314,7 @@ Here are the addresses on those networks:
 - [Base Mainnet](https://api.studio.thegraph.com/query/67521/verax-v1-base/v0.0.2)
 - [BSC Testnet](https://api.studio.thegraph.com/query/67521/verax-v1-bsc-testnet/v0.0.1)
 - [BSC Mainnet](https://api.studio.thegraph.com/query/67521/verax-v1-bsc/v0.0.1)
-- Taiko Testnet (Hekla)
+- [Taiko Testnet (Hekla)](https://api.goldsky.com/api/public/project_clyquwt6ja2rv01shcqsb2e2j/subgraphs/verax-v1-taiko-hekla-testnet/0.0.1/gn)
 
 
 ## Network Prefixes
