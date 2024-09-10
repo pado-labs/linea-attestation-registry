@@ -9,6 +9,7 @@ import {
   linea,
   lineaSepolia,
   lineaTestnet,
+  taikoHekla,
 } from "viem/chains";
 import AttestationDataMapper from "./dataMapper/AttestationDataMapper";
 import SchemaDataMapper from "./dataMapper/SchemaDataMapper";
@@ -174,6 +175,21 @@ export class VeraxSdk {
 
   static DEFAULT_BSC_FRONTEND: Conf = {
     ...VeraxSdk.DEFAULT_BSC,
+    mode: SDKMode.FRONTEND,
+  };
+
+  static DEFAULT_TAKIO_HEKLA: Conf = {
+    chain: taikoHekla,
+    mode: SDKMode.BACKEND,
+    subgraphUrl: "https://api.goldsky.com/api/public/project_clyquwt6ja2rv01shcqsb2e2j/subgraphs/verax-v1-taiko-hekla-testnet/0.0.1/gn",
+    portalRegistryAddress: "0x0fa524b2b74EC8d59Ca4515263AA9E145d2CC3eC",
+    moduleRegistryAddress: "0xAA71295581A3A8f734953624B91A05A77c5904b2",
+    schemaRegistryAddress: "0x67298a8Cf24E062bc018e50c2a64760cfB0Eb184",
+    attestationRegistryAddress: "0xAd282534895FcC7CCCD64590AEEC7b6023B4b154",
+  };
+
+  static DEFAULT_TAKIO_HEKLA_FRONTEND: Conf = {
+    ...VeraxSdk.DEFAULT_TAKIO_HEKLA,
     mode: SDKMode.FRONTEND,
   };
 
