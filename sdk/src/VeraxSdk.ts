@@ -178,7 +178,7 @@ export class VeraxSdk {
     mode: SDKMode.FRONTEND,
   };
 
-  static DEFAULT_TAKIO_HEKLA: Conf = {
+  static DEFAULT_TAIKO_HEKLA: Conf = {
     chain: taikoHekla,
     mode: SDKMode.BACKEND,
     subgraphUrl: "https://api.goldsky.com/api/public/project_clyquwt6ja2rv01shcqsb2e2j/subgraphs/verax-v1-taiko-hekla-testnet/0.0.1/gn",
@@ -188,8 +188,8 @@ export class VeraxSdk {
     attestationRegistryAddress: "0xAd282534895FcC7CCCD64590AEEC7b6023B4b154",
   };
 
-  static DEFAULT_TAKIO_HEKLA_FRONTEND: Conf = {
-    ...VeraxSdk.DEFAULT_TAKIO_HEKLA,
+  static DEFAULT_TAIKO_HEKLA_FRONTEND: Conf = {
+    ...VeraxSdk.DEFAULT_TAIKO_HEKLA,
     mode: SDKMode.FRONTEND,
   };
 
